@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="list sidebar">
+            <div class="logo">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="40" height="40" viewBox="0 0 24 24" 
+                        fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" 
+                        class="lucide lucide-graduation-cap preview-icon">
+                        <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+                        <path d="M22 10v6"/>
+                        <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+                    </svg>
+                </div>
+                <div class="name" style="color: navy; font-size: 16px;"><b>CADT</b> <br> Academic Dashboard</div>
+            </div>
+
+            <div class="list body-toggle">
+                <div class="list-tag">
+                    <div class="tag" style="color: rgba(0, 98, 255, 0.647); font-weight: bold; border-right: 3px solid navy;">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" 
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-layout-dashboard preview-icon">
+                            <rect width="7" height="9" x="3" y="3" rx="1"/>
+                            <rect width="7" height="5" x="14" y="3" rx="1"/>
+                            <rect width="7" height="9" x="14" y="12" rx="1"/>
+                            <rect width="7" height="5" x="3" y="16" rx="1"/>
+                        </svg>
+                        <span style="color: black; font-size: 15px;">Overview</span>
+                    </div>
+                    <div class="tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-book-open-text preview-icon">
+                            <path d="M12 5v16"/><path d="M16 13h2"/><path d="M16 9h2"/>
+                            <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"/>
+                            <path d="M6 13h2"/><path d="M6 9h2"/>
+                        </svg>
+                        Courses
+                    </div>
+                    <div class="tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-certificate preview-icon"><path d="M12 10H6"/>
+                            <path d="m20.69 15.479 1.29 4.88a.5.5 0 01-.698.591l-1.843-.849a1 1 0 00-.879.001l-1.846.85a.5.5 0 01-.692-.593l1.29-4.88"/>
+                            <path d="M22 6.675V6a2 2 0 00-2-2H4a2 2 0 00-2 2v12a2 2 0 002 2h8"/><path d="M6 14h4"/><circle cx="19" cy="13" r="3"/>
+                        </svg>
+                        Grade & GPA
+                    </div>
+                    <div class="tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-badge-check preview-icon">
+                            <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/>
+                            <path d="m16 9-5.5 5.5L8 12"/>
+                        </svg>
+                        Degree Audit
+                    </div>
+                    <div class="tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-clipboard-list preview-icon">
+                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"/>
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                            <path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/>
+                        </svg>
+                        Assignments & Exams
+                    </div>
+                    <div class="tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-chart-no-axes-combined preview-icon">
+                            <path d="M12 16v5"/><path d="M16 14.639V21"/><path d="M20 10.656V21"/>
+                            <path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"/>
+                            <path d="M4 18.463V21"/><path d="M8 14.656V21"/>
+                        </svg>
+                        Analytics
+                    </div>
+                    <div class="tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-calendar-days preview-icon">
+                            <path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18"/><path d="M8 13h.01"/><path d="M12 13h.01"/><path d="M16 13h.01"/><path d="M8 17h.01"/><path d="M12 17h.01"/><path d="M16 17h.01"/>
+                        </svg>
+                        Schedule
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="box list progress">
+                        <div style="font-size: 11px;">
+                            Academic progress
+                            <span style="color: rgb(16, 16, 140); font-weight: 700;"> 32% completed </span>
+                        </div> 
+                        <div class="percentage-bar" style="color: gray;">
+                            <div class="fill"></div>
+                        </div>
+                        <div style="display: flex; gap: 10em; font-size: 9px;"> 
+                            <span>27 Credits earned</span>
+                            <span>120 req.</span>
+                        </div> 
+                    </div>
+                    <div class="tag" style="border-top: 2px solid rgba(128, 128, 128, 0.2);">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-settings preview-icon">
+                            <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                        Settings
+                    </div>
+                    <div class="tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-circle-question-mark preview-icon">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9 9.5a3 2.5 0 016 0c0 2-2 2-3 3.5"/>
+                            <path d="M12 17h.01"/>
+                        </svg>
+                        Help
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main" style="font-weight: bold;">
+            <div class="header">
+                Dashboard
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <input type="text" placeholder="Search" class="box">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="background-color: rgba(4, 47, 177, 0.521); padding: 5px;" 
+                        width="30" height="30" viewBox="0 0 24 24" 
+                        fill="none" stroke="navy" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                        class="box lucide lucide-search preview-icon">
+                        <path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="box hero">
+                <div class="tag-box">Academic Performance</div>
+                <div class="hero-body">
+                    <div class="text-box">
+                        <p style="font-size: 18px;">Welcome back Peter! You are currently 
+                            <br> on track for Software Engineering Bachelor. 
+                        </p>
+                        <p style="font-size: 12px; font-weight: 500;">Your cumulative standing remains in good condition of cirriculum.</p>
+                    </div>
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/054/128/150/small/a-young-boy-studying-at-a-desk-surrounded-by-colorful-stationery-and-a-cute-dog-png.png" alt="">
+                </div>
+            </div>
+            <div class="box enroll">
+                <div class="enroll-top">
+                    <div>
+                        Enrolled Courses (2025-2026) <br> 
+                        <span style="font-size: 8px;">Real-time syllabus weightings, attendaces, and pending submissions</span>
+                    </div>
+                    <div class="box total-credit" style="background-color: rgba(0, 170, 255, 0.352); padding: 5px; font-size: 10px;">12 Credits Total</div>
+                </div>
+                <div class="list course-list">
+                    <div class="box course">
+                        <div class="subject">
+                            <div class="subject-top">
+                                <div class="box subject-logo">AC</div>
+                                <b>AC: Algorithm     & Computational Thinking</b>
+                                <div class="box credit">4 <br> Credits</div>
+                            </div>
+                            
+                            <div class="about-subject">
+                                Lct. Kong Phutphalla - A007 <br> Attendance: <b>100%</b> 
+                            </div>
+                        </div>
+                        <div class="grade">
+                            <div class="score-percentage">
+                                <span> Current 
+                                    <br> Score 
+                                    <br> <span style="font-size: 18px;"><b>88.5%</b></span>
+                                </span> 
+                            </div>
+                            <div class="box grade-box">B</div>
+                        </div>
+                        <div class="score">
+                            <div>Midterm: 40/50 (<b>80%</b>)</div>
+                            <div>Homework Avg: <b>96%</b></div>
+                            <div>Final: 42/50 (<b>84%</b>)</div>
+                        </div>
+                    </div>
+                    <div class="box course">
+                        <div class="subject">
+                            <div class="subject-top">
+                                <div class="box subject-logo">LA</div>
+                                <b>LA: Linear Algebra</b>
+                                <div class="box credit">4 <br> Credits</div>
+                            </div>
+                            
+                            <div class="about-subject">
+                                Lct. Ngeth Youdarith - A002 <br> Attendance: <b>100%</b> 
+                            </div>
+                        </div>
+                        <div class="grade">
+                            <div class="score-percentage">
+                                <span> Current 
+                                    <br> Score 
+                                    <br> <span style="font-size: 18px;"><b>88.5%</b></span>
+                                </span> 
+                            </div>
+                            <div class="box grade-box">B</div>
+                        </div>
+                        <div class="score">
+                            <div>Midterm: 40/50 (<b>80%</b>)</div>
+                            <div>Homework Avg: <b>96%</b></div>
+                            <div>Final: 42/50 (<b>84%</b>)</div>
+                        </div>
+                    </div>
+                    <div class="box course">
+                        <div class="subject">
+                            <div class="subject-top">
+                                <div class="box subject-logo">IT</div>
+                                <b>IT: IT Essential & Networking</b>
+                                <div class="box credit">4 <br> Credits</div>
+                            </div>
+                            
+                            <div class="about-subject">
+                                Lct. Van Khema - A008 <br> Attendance: <b>100%</b> 
+                            </div>
+                        </div>
+                        <div class="grade">
+                            <div class="list score-percentage">
+                                <span> Current 
+                                    <br> Score 
+                                    <br> <span style="font-size: 18px;"><b>88.5%</b></span>
+                                </span> 
+                            </div>
+                            <div class="box grade-box">B</div>
+                        </div>
+                        <div class="score">
+                            <div>Midterm: 40/50 (<b>80%</b>)</div>
+                            <div>Homework Avg: <b>96%</b></div>
+                            <div>Final: 42/50 (<b>84%</b>)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-feature">
+                <div class="box list audit">
+                    <div class="audit-top">
+                        <div class="list audit-name">
+                            Degree Audit
+                            <span>B.S in CS: Software Engineering</span>
+                        </div>
+                        <div class="box label">Full Audit > </div>
+                    </div>
+                    <div class="list audit-body">
+                        <div class="list bar-list">
+                            <div class="list bar">
+                                <div class="bar-name">
+                                    <div class="name-section">
+                                        <svg xmlns="http://www.w3.org/2000/svg" 
+                                            width="18" height="18" viewBox="0 0 24 24" 
+                                            fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                                            class="lucide lucide-circle-check preview-icon">
+                                            <circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/>
+                                        </svg>
+                                        General Education Core
+                                    </div>
+                                    <div class="credit-section">
+                                        30/30 Credits (100%)
+                                    </div>
+                                </div>
+                                <div class="bar-graph">
+                                    <div class="bar-fill"></div>
+                                </div>
+                            </div>
+                            <div class="list bar">
+                                <div class="bar-name">
+                                    <div class="name-section">
+                                        <svg xmlns="http://www.w3.org/2000/svg" 
+                                            width="18" height="18" viewBox="0 0 24 24" 
+                                            fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                                            class="lucide lucide-circle-check preview-icon">
+                                            <circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/>
+                                        </svg>
+                                        CS Core Major Requirements
+                                    </div>
+                                    <div class="credit-section">
+                                        34/40 Credits (85%)
+                                    </div>
+                                </div>
+                                <div class="bar-graph">
+                                    <div class="bar-fill" style="background-color: navy; width: 85%; border-radius: 5px;"></div>
+                                </div>
+                            </div>
+                            <div class="list bar">
+                                <div class="bar-name">
+                                    <div class="name-section">
+                                        <svg xmlns="http://www.w3.org/2000/svg" 
+                                            width="18" height="18" viewBox="0 0 24 24" 
+                                            fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                                            class="lucide lucide-circle-check preview-icon">
+                                            <circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/>
+                                        </svg>
+                                        CS Upper Electives
+                                    </div>
+                                    <div class="credit-section">
+                                        12/20 Credits (60%)
+                                    </div>
+                                </div>
+                                <div class="bar-graph">
+                                    <div class="bar-fill" style="background-color: navy; width: 60%; border-radius: 5px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total-credit box list" style="width: 96%; padding: 15px 10px;">
+                    <div class="credit-header">
+                        Credit Hours Earned
+                        <div style="background-color: rgba(47, 168, 248, 0.242); padding: 5px; border-radius: 12px;">73% Completed</div>
+                    </div>
+                    <div class="credit-main list">
+                        <div>
+                            <span style="font-size: 25px; color: black;">88</span> /120 Total
+                        </div>
+                        <div class="bar-graph">
+                            <div class="bar-fill" style="width: 73%; background-color: navy; border-radius: 5px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="sidebar2 list">
+            <div class="sidebar2-header">
+                Logout
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" height="24" viewBox="0 0 24 24" 
+                    fill="none" stroke="currentColor" stroke-width="2" 
+                    stroke-linecap="round" stroke-linejoin="round" 
+                    class="lucide lucide-log-out preview-icon">
+                    <path d="m16 17 5-5-5-5"/><path d="M21 12H9"/>
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                </svg>
+            </div>
+            <div class="profile list">
+                <img src="https://i.pinimg.com/736x/da/e7/d6/dae7d6ab8e2abd3e74d776a5fd49a6cb.jpg" alt="">
+                <div class="list" style="align-items: center; font-size: 25px;">
+                    Peter Parker
+                    <span style="font-size: 16px;">Student</span>
+                </div>
+            </div>
+            
+            <div class="remider list" style="gap: 15px; font-size: 12px;">
+                <div style="margin-left: 15px; font-weight: bold; font-size: medium;">Remiders</div>
+                <div class="box remider-box">
+                    <div class="remider-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="20" height="20" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" stroke-width="2" 
+                            stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-info preview-icon reminder-logo">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 16v-4"/>
+                            <path d="M12 8h.01"/>
+                        </svg>
+                    </div>
+                    <div class="reminder-text list">
+                        Linear Algebra Assignment
+                        <br> <span>Due: 23 Sep 2019, Thursday</span> 
+                    </div>
+                </div>
+                <div class="box remider-box">
+                    <div class="remider-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="20" height="20" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" stroke-width="2" 
+                            stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-info preview-icon reminder-logo">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 16v-4"/>
+                            <path d="M12 8h.01"/>
+                        </svg>
+                    </div>
+                    <div class="reminder-text list">
+                        Algorithm Assignment
+                        <br> <span>Due: 24 Sep 2019, Friday</span> 
+                    </div>
+                </div>
+                <div class="box remider-box">
+                    <div class="remider-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="20" height="20" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" stroke-width="2" 
+                            stroke-linecap="round" stroke-linejoin="round" 
+                            class="lucide lucide-info preview-icon reminder-logo">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 16v-4"/>
+                            <path d="M12 8h.01"/>
+                        </svg>
+                    </div>
+                    <div class="reminder-text list">
+                        Linear Algebra Assignment
+                        <br> <span>Due: 22 Sep 2019, Wednesday</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

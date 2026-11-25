@@ -1,0 +1,415 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: #444;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+span {
+    font-size: 10px;
+    color: #444444a0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.box {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.sidebar {
+    grid-area: sb;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar2 {
+    grid-area: sb2;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "sb main sb2"
+    ;
+    grid-template-columns: 18% 1fr 20%;
+}
+
+.sidebar {
+    border-right: 2px solid rgba(128, 128, 128, 0.2);
+    top: 0;
+    position: sticky;
+}
+
+.logo {
+    height: 10%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.2);
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.lucide-graduation-cap {
+    background-color: navy;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 whitesmoke;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+    cursor: pointer;
+}
+
+.tag:hover {
+    color: rgba(0, 98, 255, 0.647);
+}
+
+.body-toggle {
+    height: 90%;
+    justify-content: space-between;
+}
+
+.progress {
+    width: 90%;
+    place-self: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 5px;
+    background-color: rgba(47, 167, 248, 0.473);
+    margin-bottom: 1em;
+}
+.percentage-bar {
+    width: 95%;
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.fill {
+    width: 32%;
+    height: 100%;
+    background-color: navy;
+    border-radius: 5px;
+}
+
+.main {
+    background-color: rgba(128, 128, 128, 0.100);
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "hero hero"
+    "enroll side-feature"
+    ;
+    grid-template-rows: 10% 30% 1fr;
+    grid-template-columns: 60% 40%;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+input {
+    height: 2em;
+    width: 15em;
+    align-self: center;
+    border: none;
+}
+
+.hero {
+    width: 92%;
+    place-self: center;
+    padding: 5px;
+    position: relative;
+    background-color: rgba(12, 146, 255, 0.301);
+    grid-area: hero;
+}
+
+.tag-box {
+    font-size: 10px;
+    width: 18%;
+    text-align: center;
+    border-radius: 2px;
+    padding: 3px;
+    color: navy;
+    background-color: rgba(0, 149, 255, 0.443);
+    margin-left: 4px;
+}
+
+.hero-body {
+    height: 100%;
+    display: flex;
+}
+
+.text-box {
+    width: 55%;
+    padding-left: 5px;
+}
+
+.hero-body img {
+    width: 12em;
+    height: 11rem;
+    position: absolute;
+    top: -25%;
+    right: 10%;
+}
+
+.enroll {
+    grid-area: enroll;
+    width: 85%;
+    margin-left: 2em;
+    background-color: rgb(255, 255, 255);
+    color: #444444cc;
+
+    b{
+        color: rgba(0, 0, 0, 0.801);
+    }
+    height: 95%;
+}
+
+.enroll-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.course-list {
+    gap: 5px;
+}
+
+.course {
+    display: grid;
+    grid-template-areas: 
+        "subject grade"
+        "score score"
+    ;
+    grid-template-columns: 70% 30%;
+    row-gap: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.300);
+}
+
+.subject {
+    grid-area: subject;
+    display: flex;
+    flex-direction: column;
+}
+
+.subject-top {
+    width: 90%;
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.subject-logo {
+    height: 2em;
+    background-color: rgba(0, 94, 255, 0.397);
+    align-content: center;
+    padding: 5px 10px;
+    color: navy;
+}
+
+.credit {
+    height: 2em;
+    align-content: center;
+    padding-top: 0;
+    padding-bottom: 5px;
+    font-size: 10px;
+    background-color: rgba(0, 94, 255, 0.397);
+    color: navy;
+}
+
+.about-subject {
+    font-size: 10px;
+    margin-left: 15%;
+}
+
+.grade {
+    grid-area: grade;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score-percentage {
+    justify-content: center;
+    gap: 0;
+    text-align: end;
+}
+
+.grade-box {
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    align-content: center;
+    font-size: 20px;
+    background-color: rgba(0, 94, 255, 0.397);
+    border: 1px solid rgba(0, 47, 128, 0.297);
+    color: navy;
+}
+
+.score {
+    grid-area: score;
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    border-top: 1px solid rgba(128, 128, 128, 0.300);
+}
+
+.side-feature {
+    grid-area: side-feature;
+    margin-right: 2.5em;
+}
+
+.audit {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.audit-top {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 5px 0;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.300);
+}
+
+.audit-name {
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.label {
+    width: 5rem;
+    height: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 10px;
+    color: rgb(0, 109, 177);
+}
+
+.audit-body {
+    margin: 0.5rem;
+    font-size: 12px;
+}
+
+.bar-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.credit-section {
+    width: 30%;
+}
+
+.bar-graph {
+    height: 0.5rem;
+    background-color: rgba(0, 0, 255, 0.318);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: green; 
+}
+
+.total-credit { 
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+.credit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar2 {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid rgba(128, 128, 128, 0.2);
+}
+
+.sidebar2-header {
+    display: flex;
+    justify-content: space-between; 
+    padding: 15% 15px; 
+    font-size: 18px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    border: 2px solid gray;
+    border-radius: 100%;
+    background-color: rgba(128, 128, 128, 0.244);
+}
+
+.remider-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+.reminder-logo {
+    background-color: rgba(255, 0, 0, 0.194);
+    align-self: center;
+    color: red;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.reminder-text {
+    width: 75%;
+    margin-top: 0; 
+    padding-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+
+
